@@ -27,4 +27,4 @@ A simple web application that generates QR codes from user-inputted text or URLs
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/qrcode-generator.git
+   git clone https://github.com/Deepak650/QR-Code-Generator.git
