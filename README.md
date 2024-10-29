@@ -1,4 +1,3 @@
-﻿# QR-Code-Generator
 # QR Code Generator
 
 A simple web application that generates QR codes from user-inputted text or URLs. Users can also download the generated QR codes as PNG files.
