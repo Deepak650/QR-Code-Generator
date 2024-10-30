@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bmiapp
+  name: qcgapp
   labels:
-    app: bmiapp
+    app: qcgapp
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: bmiapp
+      app: qcgapp
   template:
     metadata:
       labels:
-        app: bmiapp
+        app: qcgapp
     spec:
       containers:
-        - name: bmicontainer
+        - name: qcgcontainer
           image: bmicontainer.azurecr.io/bmicalculator:latest
           imagePullPolicy: Always
           ports:  # Correct indentation here
