@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: qcgcontainer
-          image: bmicontainer.azurecr.io/bmicalculator:latest
+          image: qcgcontainer.azurecr.io/qrcodegenerator:latest
           imagePullPolicy: Always
           ports:  # Correct indentation here
             - containerPort: 80
