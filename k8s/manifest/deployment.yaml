@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bmiapp
+  labels:
+    app: bmiapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bmiapp
+  template:
+    metadata:
+      labels:
+        app: bmiapp
+    spec:
+      containers:
+        - name: bmicontainer
+          image: bmicontainer.azurecr.io/bmicalculator:latest
+          imagePullPolicy: Always
+          ports:  # Correct indentation here
+            - containerPort: 80
